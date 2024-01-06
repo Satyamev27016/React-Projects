@@ -14,18 +14,21 @@ function Login() {
     }
     return(
 
-        <div>
-            <h2>Login</h2>
-            <input type='text' 
+        <div className=' '>
+            <h1 className='text-2xl mb-20'>Login Page</h1>
+          <div className=''>
+            <input className='mr-8 text-center placeholder-center'
+            type='text' 
              value={username}
              onChange={(e)=> setUsername(e.target.value)}
             placeholder='username' />
-            <input type='text' 
+            <input className='text-center placeholder-center'
+             type='text' 
              value={password}
              onChange={(e)=> setPassword(e.target.value)}
             placeholder='password' />
-            <button onClick={handleSubmit}>Submit</button>
-
+            <button className='ml-8'   onClick={handleSubmit}>Submit</button>
+          </div>
          </div>   
     )
 }

@@ -10,7 +10,7 @@ function App() {
 
   return (
     <UserContextProvider>
-       <h1>Hello World</h1>
+       
        <Login />
        <Profile />
     </UserContextProvider>
